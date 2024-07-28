@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Daily Quotes</title>
+</head>
+
+<body>
+    <article>
+        <h2>Daily Quote</h2>
+        <p data-th-text="${quote}"></p>
+        <hr>
+        <div>
+            <div>
+                <a data-th-href="|https://twitter.com/intent/tweet?text=${quote}
+            |" target="_blank"><img src="x-logo.jpg" alt="twitter-logo" width="40" height="40"></a>
+
+
+                <a data-th-href="|https://www.facebook.com/sharer/sharer.php?u=${quote}
+            |" target="_blank"><img src="facebook-logo.jpg" alt="twitter-logo" width="40" height="40"></a>
+
+
+                <a data-th-href="|whatsapp://send?text=${quote}
+                |" target="_blank"><img src="whatsapp-logo.png" alt="twitter-logo" width="40" height="40"></a>
+            </div>
+            <a href="/" class="new-quote">New Quote</a>
+        </div>
+    </article>
+</body>
+
+</html>
+
+
+  
